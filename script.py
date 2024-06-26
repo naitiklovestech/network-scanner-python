@@ -1,5 +1,5 @@
 import socket
-from scapy.layers.12 import ARP, Ether
+from scapy.layers import ARP, Ether
 from scapy.sendrecv import srp
 
 from threading import Thread, Lock
