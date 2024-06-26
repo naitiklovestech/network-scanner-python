@@ -55,3 +55,24 @@ def network_scan(target_ip):
         for client in clients:
             print("{:16}    {}".format(client['ip'], client['mac']))
 
+def main():
+    print("1. TCP Port Scanner")
+    print("2. Network Scanner")
+    choice = int(input("Enter your choice(1 or 2) :"))
+
+    if choice==1:
+        network = input("IP Address : ")
+        startPort = int(input("Start Port : "))
+        endPort = int(input("End Port : "))
+        scanHost(network, startPort, endPort)
+
+    elif choice ==2:
+        target_ip = input("Enter the target ip address (format = 172.17.3.1/24) : ")
+        network_scan(target_ip)
+
+    else:
+        print("Invalid choice, please enter 1 or 2")
+
+if __name__ == "__main__":
+    main()
+    end = input("Press any key to close")
