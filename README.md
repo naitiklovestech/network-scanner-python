@@ -4,12 +4,10 @@ This is a network scan tool written in Python which can be directly run in the s
 ## Dependencies 
 This tool has minimum dependencies which can be easily installed by using pip command 
 - socket
-This library is used to establish network connections over the network protocols such as TCP and UDP to send and receive data packets
 ```
 python3 -m pip install socket
 ```
 - scapy
-This library is used for interacting with packets on the network
 ```
 python3 -m pip install scapy
 ```
